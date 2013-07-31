@@ -1,0 +1,21 @@
+{
+  "name": "DrawingGame",
+  "version": "0.0.1-504",
+  "dependencies": {
+    "node-static": "latest",
+    "socket.io": ">= 0.9.6",
+    "knox": "~0.3.1"
+  },
+  "engines": {
+    "node": "0.6.x",
+    "npm": "1.1.4"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "domains": [
+    "grafchat.com",
+    "www.grafchat.com"
+  ],
+  "subdomain": "daviddiliberto-whiteboard.daviddiliberto"
+}

@@ -1,0 +1,24 @@
+NODEJS Drawing Game
+
+* Original work: http://tutorialzine.com/2012/08/nodejs-drawing-game/
+* Credits also to VROBBI for adding initial features: https://github.com/vrobbi/whiteboard
+* Demo on Nodejitsu: daviddiliberto-whiteboard.daviddiliberto.jit.su
+
+
+To Do:
+----
+- Drag and Drop image from desktop to canvas
+- Ability to change name
+- Private rooms: https://github.com/LearnBoost/socket.io/wiki/Rooms
+
+Ideas:
+------
+
+- Mobile
+- Start on random color
+- Add a button to change brush size
+- Add a button to erase the draws
+- Add a button to add different colors
+
+
+

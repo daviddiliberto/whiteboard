@@ -1,6 +1,6 @@
 {
   "name": "DrawingGame",
-  "version": "0.0.1-534",
+  "version": "0.0.1-535",
   "dependencies": {
     "node-static": "latest",
     "socket.io": ">= 0.9.6",
@@ -14,8 +14,8 @@
     "start": "node app.js"
   },
   "domains": [
-    "grafchat.com",
-    "www.grafchat.com"
+    "bored.io",
+    "www.bored.io"
   ],
   "subdomain": "daviddiliberto-whiteboard.daviddiliberto"
 }

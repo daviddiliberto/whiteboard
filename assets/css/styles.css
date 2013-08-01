@@ -129,7 +129,7 @@ instructions {
 
 h1{
     font-size: 60px;
-    font-weight: bold;
+    font-weight: normal;
 	padding-bottom: 8px;
     font-family: 'Anton',helvetica,arial, sans-serif;
     color: #08A8DE;
@@ -176,7 +176,7 @@ h3{
     background: none repeat scroll 0 0 #F2F3F3;
     border: 2px solid #EEEEEE;
     border-radius: 5px 5px 5px 5px;
-    color: #FF3948;
+    color: #DC5341;
     font-family: helvetica,arial;
     font-size: 16px;
     font-weight: bold;
@@ -247,7 +247,7 @@ h3{
   
 }
 .memsg  {
-    color: #FF3948;
+    color: #DC5341;
     font-size: 16px;
     height: auto;
     padding: 5px;  
@@ -308,28 +308,30 @@ height:445px;
     width: 85px;
 }
 
+#clearsave{
+padding: 10px;
+font-weight:bold;
+}
+
 #cancellalavagna{
-    background: none repeat scroll 0 0 transparent;
+    background: none repeat scroll 0 0 #DDDDDD;
     border: 0 none;
-    bottom: 0;
-    color: #464368;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    cursor: pointer;
     font-family: helvetica,arial,sans-serif;
     font-size: 16px;
-    left: 0;
-    padding: 20px;
-    position: absolute;
+    padding: 5px;
 }
 #salvafoto {
-    background: none repeat scroll 0 0 transparent;
+    background: none repeat scroll 0 0 #DDDDDD;
     border: 0 none;
-    bottom: 0;
-    color: #464368;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    cursor: pointer;
     font-family: helvetica,arial,sans-serif;
     font-size: 16px;
-    left: 0;
-    margin-left: 50px;
-    padding: 20px;
-    position: absolute;
+    padding: 5px;
 }
 
 

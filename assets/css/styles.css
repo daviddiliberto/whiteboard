@@ -251,9 +251,10 @@ h3{
   
 }
 .memsg  {
+    color: #DC5341;
     font-size: 16px;
     font-weight: 300;
-    color:#DC5341;
+    margin-top: 10px;
 }
 
 #frecce {

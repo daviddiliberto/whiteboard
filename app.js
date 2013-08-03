@@ -215,7 +215,7 @@ socket.on('camperaltri', function (data) {
 		// update list of users in chat, client-side
 		io.sockets.emit('updateusers', usernames);
 		// echo globally that this client has left
-		socket.broadcast.emit('updatechat', 'SERVER', socket.username + ' has disconnected');
+		socket.broadcast.to(socket.room).emit('updatechat', 'SERVER', socket.username + ' has disconnected');
 		socket.leave(socket.room);
 	});
 	
@@ -228,15 +228,15 @@ socket.on('camperaltri', function (data) {
 				clientNames.push(clients[i].username);
 				
 			  }
-			socket.broadcast.to(socket.room).emit('updatechat', 'SERVER', 'hello');
-			console.log("hello");
+			//socket.broadcast.to(socket.room).emit('updatechat', 'SERVER', 'hello');
+			
 	});
 	socket.on('changeUserName',function(newName){
 			socket.username = newName;
 	});
 	
 	socket.on('dropImage',function(data){
-			socket.broadcast.emit('addImage', data);
+			socket.broadcast.to(socket.room).emit('addImage', data);
 	});
 	
 });

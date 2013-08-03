@@ -1,10 +1,9 @@
 .minicolors {
     display: inline-block;
-    padding-right: 10px;
-    padding-top: 10px;
+    float: right;
+    margin-top: 20px;
     position: relative;
     z-index: 1;
-    float:right;
 }
 
 .minicolors-focus {
@@ -45,16 +44,16 @@
 }
 
 .minicolors-swatch {
-    display: inline-block;
     position: relative;
     vertical-align: middle;
 }
 
 .minicolors-swatch SPAN {
+    border-radius: 3px 3px 3px 3px;
     display: inline-block;
     height: 30px;
     margin: 20px;
-    width: 50px;
+    width: 30px;
 }
 
 /* Panel */

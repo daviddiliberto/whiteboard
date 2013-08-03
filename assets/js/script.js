@@ -48,7 +48,7 @@ var socket = io.connect(url);
 	
 var ctx = canvas[0].getContext('2d');	
 var ctx1 = canvas1[0].getContext('2d');	
-var spessore = jQuery('#spessore').value;
+var width = jQuery('#width').value;
 var colorem;
     // Force canvas to dynamically change its size to the same width/height
     // as the browser window.
@@ -126,7 +126,7 @@ socket.emit('doppioclick',{
 				'write': document.getElementById('write').value,				
 				'color': $('#minicolore').minicolors('rgbaString'),
 				'id': id,
-				'spessremo' : document.getElementById('spessore').value,
+				'spessremo' : document.getElementById('width').value,
 				'fontsizerem': document.getElementById('fontsize').value
 			});
 
@@ -232,7 +232,7 @@ objDiv1.scrollTop = objDiv1.scrollHeight;
 		  
    document.addEventListener("change", cambiaspessore, true);
   function cambiaspessore () {
-	   ctx.lineWidth = document.getElementById('spessore').value;	   
+	   ctx.lineWidth = document.getElementById('width').value;	   
 }  
       
 	canvas.on('mousedown', function(e){
@@ -263,7 +263,7 @@ objDiv1.scrollTop = objDiv1.scrollHeight;
                 'color': $('#minicolore').minicolors('rgbaString'),
 				'id': id,
 				'username' : document.getElementById('username').value,
-				'spessremo' : document.getElementById('spessore').value,
+				'spessremo' : document.getElementById('width').value,
 				'nameChanged' : nameChanged,
 			});
 			nameChanged = false;
@@ -306,16 +306,16 @@ thissound.play();
 
 	function drawLine(fromx, fromy, tox, toy){
 		ctx.strokeStyle = $('#minicolore').minicolors('rgbaString');
-		ctx.lineWidth = document.getElementById('spessore').value;	
+		ctx.lineWidth = document.getElementById('width').value;	
         ctx.beginPath();
 		ctx.moveTo(fromx, fromy);
 		ctx.lineTo(tox, toy);
 		ctx.stroke();
 	}
 	
-	function drawLinerem(fromx, fromy, tox, toy,spessore,colorem){
+	function drawLinerem(fromx, fromy, tox, toy,width,colorem){
 		ctx.strokeStyle = colorem;
-       ctx.lineWidth = spessore;	
+       ctx.lineWidth = width;	
         ctx.beginPath();
 		ctx.moveTo(fromx, fromy);
 		ctx.lineTo(tox, toy);
@@ -328,7 +328,7 @@ function fileOnload(e) {
    //     var canvas1 = $('#paper')[0];
    //     var context1 = canvas1.getContext('2d');
         img.load(function() {
-            ctx.drawImage(this, positionx, positiony);
+            ctx.drawImage(this,300,10,600,400);
 			socket.emit('fileperaltri',{
 				'id': id,
 				'positionx': positionx,

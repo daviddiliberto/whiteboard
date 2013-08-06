@@ -52,7 +52,7 @@ section, footer, header{
 }
 
 #simple-menu {
-    background: none repeat scroll 0 0 #CCCCCC;
+    background: none repeat scroll 0 0 #84EAEA;
     color: #FFFFFF;
     display: block;
     font-size: 40px;
@@ -62,9 +62,10 @@ section, footer, header{
     position: fixed;
     text-align: center;
     text-decoration: none;
-    top: 0;
+    bottom: 0;
     width: 50px;
     z-index: 999999;
+    display:none;
 }
 
 #simple-menu:hover {
@@ -74,7 +75,7 @@ section, footer, header{
 
 .sidr {
     background: none repeat scroll 0 0 #FFFFFF;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
     color: #000000 !important;
     display: none;
     font-size: 15px;
@@ -90,13 +91,19 @@ section, footer, header{
 	Main Area
 --------------------------*/
 #logo{
-    font-family: 'Raleway', helvetica, arial, sans-serif;
-    color: #333333;
+    background-color: #FF3948;
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Raleway',helvetica,arial,sans-serif;
+    font-size: 20px;
     letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-left: 30%;
     margin-top: 10px;
+    padding: 10px;
     text-align: center;
     top: 0;
-    font-size:30px;
 }
 
 #logo:hover{
@@ -111,14 +118,13 @@ section, footer, header{
 
 
 hgroup{
-    background-color: #FFFFFF;
-    border: 3px solid #333333;
-    color: #CCCCCC;
+    background-color: #FFFFA8;
+    color: #FFFFFF;
     left: 50%;
     margin: -110px 0 0 -240px;
     padding: 20px;
     position: fixed;
-    text-align: left;
+    text-align: center;
     top: 40%;
     width: 400px;
     z-index: 999999;
@@ -128,9 +134,9 @@ instructions {
 }
 
 h1{
-    color: #333333;
-    font-family: 'Raleway', helvetica, arial, sans-serif;
-    font-size: 40px;
+    color: #666666;
+    font-family: 'Raleway',helvetica,arial,sans-serif;
+    font-size: 30px;
     font-weight: bold;
 
 }
@@ -175,12 +181,12 @@ h3{
     background: none repeat scroll 0 0 #F2F3F3;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px 5px 5px 5px;
-    color: #DC5341;
+    color: #FF3948;
     font-family: helvetica,arial;
     font-size: 16px;
     font-weight: 300;
     height: 35px;
-    margin-left: 20px;
+    margin-left: 10px;
     overflow: auto;
     padding-left: 10px;
     position: relative;
@@ -204,32 +210,54 @@ h3{
 }
 
 #textarea {
-    bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    padding-top: 20px;}
+
+.file_button_container,
+.file_button_container input {
+  background: transparent url(/assets/img/upload.png) left top no-repeat;
+  height: 32px;
+  width: 32px;
+  margin-right:10px;
+ }
+
+       .file_button_container {
+               background: url(/assets/img/upload.png) no-repeat scroll left top transparent;
+               float: left;
+       }
+    
+       .file_button_container input {
+           opacity: 0;
+       }
+
+#catturacam {
+      background: transparent url(/assets/img/webcam.png) left top no-repeat;
+      border: 0 none;
+      height: 32px;
+      width: 32px;
 }
 
-#file-input {
-    overflow: hidden;
-    position: relative;
-    width:100px;
-}
 
 #onlineCounter {
-    color: #000000;
-    font-size: 12px;
-    margin-left: 20px;
+    background: url("/assets/img/eye.png") no-repeat scroll left top transparent;
+    color: #999999;
+    font-size: 14px;
     overflow: auto;
+    padding-left: 20px;
     position: absolute;
+    right: 0;
+    width: 20px;
     z-index: 999999;
 }
 
 #testichat {
     background-color: #FFFFFF;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     color: #333333;
     font-size: 13px;
-    height: 60%;
-    margin-bottom: 20px;
+    height: 70%;
     margin-top: 20px;
     overflow: auto;
     padding-left: 10px;
@@ -237,9 +265,7 @@ h3{
 }
 
 #items {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    height: 50px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 20px;
 }
 
@@ -251,7 +277,7 @@ h3{
   
 }
 .memsg  {
-    color: #DC5341;
+    color: #FF3948;
     font-size: 16px;
     font-weight: 300;
     margin-top: 10px;
@@ -316,21 +342,11 @@ height:445px;
     border: medium none;
     border-radius: 3px 3px 3px 3px;
     cursor: pointer;
-    float: left;
     font-family: 'helvetica neue',helvetica,arial,sans-serif;
     font-size: 13px;
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 5px 10px;
     width: 210px;
-}
-
-#catturacam {
-    background: none repeat scroll 0 0 #DC5341;
-    border: 0 none;
-    border-radius: 30px 30px 30px 30px;
-    color: #FFFFFF;
-    font-size: 15px;
-    padding: 5px;
 }
 
 #clearsave{

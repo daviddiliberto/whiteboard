@@ -182,7 +182,7 @@
     var settings = $.extend( {
       name          : 'sidr', // Name for the 'sidr'
       speed         : 200,    // Accepts standard jQuery effects speeds (i.e. fast, normal or milliseconds)
-      side          : 'left', // Accepts 'left' or 'right'
+      side          : 'right', // Accepts 'left' or 'right'
       source        : null,   // Override the source of the content.
       renaming      : true,   // The ids and classes will be prepended with a prefix when loading existent content
       body          : '#simple-menu'  // Page container selector,

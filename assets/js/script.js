@@ -90,7 +90,7 @@ objDiv.scrollTop = objDiv.scrollHeight;
     var b = Math.floor(Math.random() * 255) + 70;
     var color = 'rgb(' + r + ',' + g + ',' + b + ')';
   
-$('#file-input').change(function(e) {
+$('.file_button_container').change(function(e) {
         var file = e.target.files[0],
             imageType = /image.*/;
     if (!file.type.match(imageType))
@@ -295,11 +295,6 @@ objDiv1.scrollTop = objDiv1.scrollHeight;
                 delete cursors[ident];
             }
             else {
-			 totalOnline++;
-			 if (document.getElementById('faisuonare').checked) {
-      var thissound=document.getElementById("audio1");
-thissound.play();												  
-			 }
         }}
         jQuery('#onlineCounter').html('<i class="icon-eye-open"></i> '+totalOnline);
     },20000);

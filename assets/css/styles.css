@@ -221,6 +221,7 @@ h3{
   height: 32px;
   width: 32px;
   margin-right:10px;
+  cursor:pointer;
  }
 
        .file_button_container {
@@ -237,6 +238,7 @@ h3{
       border: 0 none;
       height: 32px;
       width: 32px;
+      cursor:pointer;
 }
 
 
@@ -320,7 +322,7 @@ height:445px;
     line-height: 15px;
     padding: 10px;
     position: absolute;
-    right: 0;
+    left: 0;
     text-transform: uppercase;
 }
 

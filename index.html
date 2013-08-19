@@ -44,7 +44,7 @@ $(document).ready(function init() {
   $.sidr('open', 'sidr');
 });
 </script>
-  <div id="logo">BORED.io</div>
+  <div id="logo"></div>
 <p class='tzine' id='onlineCounter' href=''><i class="icon-eye-open"></i> 1</p>
 <div id="testichat"></div>
 <div id="textarea">
@@ -89,16 +89,7 @@ $(document).ready(function init() {
 		<canvas id="paper" width="1900" height="1000">
 			Your browser needs to support canvas for this to work!
 		</canvas>
-	<canvas id="paper1" style="display:none;" width="320" height="240"> </canvas>
-		<hgroup id="instructions">
-      <h1>DOODLE</h1>
-      <h2>Everyone can see what you draw.</h2>
-      <h1>CHAT</h1>
-      <h2>Talk $#!+, we would never censor you.</h2>
-      <h1>UPLOAD</h1>
-      <h2>Drop an image into the drawing area or snap a selfie with your webcam.</h2>
-      </hgroup>
-        
+	<canvas id="paper1" style="display:none;" width="320" height="240"> </canvas>        
         <!-- JavaScript includes. Notice that socket.io.js is served by node.js -->
 		<script src="/socket.io/socket.io.js"></script>    
     <script src="assets/js/socketstuff.js"></script>

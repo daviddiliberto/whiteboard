@@ -91,19 +91,18 @@ section, footer, header{
 	Main Area
 --------------------------*/
 #logo{
-    background-color: #FF3948;
-    border-radius: 6px 6px 6px 6px;
-    color: #FFFFFF;
-    display: inline-block;
-    font-family: 'Raleway',helvetica,arial,sans-serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    margin-left: 30%;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-    top: 0;
+background-image: url('../img/bored_kilroy.png');
+width:135px;
+height:100px;
+display: inline-block;
+font-family: 'helvetica',arial,sans-serif;
+font-size: 20px;
+letter-spacing: 1px;
+margin-bottom: 10px;
+margin-left: 25%;
+margin-top: 10px;
+text-align: center;
+top: 0;
 }
 
 #logo:hover{
@@ -445,4 +444,29 @@ footer p.tzine{
     position: absolute;
     text-decoration: none;
     top: 0;
+}
+
+/* 320px and greater (iPwn portrait) */
+@media only screen and (min-width: 320px) {
+
+body{
+	font:14px/1.3 'Helvetica',Arial, sans-serif;
+	color:#444;
+  background-color: #000;
+}  
+  #mobile_portrait {
+    display:block;
+    width:100%;
+    height:204px;
+    position:absolute;
+    left:0px;
+    top:125px;
+    background-image:url('img/spinny_phoney.png');
+    background-size:250px 204px;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  
+    #body, #masthead ul, footer {display:none;}
+  
 }

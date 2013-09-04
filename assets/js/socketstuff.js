@@ -13,7 +13,7 @@
 			socket.on('updatechat', function (username, data) {
 				/*if(username != "SERVER")
 					username = document.getElementById('username').value; */
-				jQuery('<div class="memsg"><b>'+ username +': </b><span style="color:#000000;">' + data +'</span></div>').appendTo('#testichat');
+				jQuery('<div class="memsg"><b>'+ username +': </b><span style="color:#ffffff;">' + data +'</span></div>').appendTo('#testichat');
 				document.getElementById('write').value ='';
 				//$('#conversation').append('<b>'+username + ':</b> ' + data + '<br>');
 			});

@@ -7,7 +7,7 @@ html {
     overflow: hidden;
 }
 body {
-    background-color: #F2F3F3;
+    background-color: #FFFFFF;
     color: #444444;
     font: 14px/1.3 'Helvetica',Arial,sans-serif;
 }
@@ -52,7 +52,6 @@ section, footer, header {
 }
 .sidr {
     background: none repeat scroll 0 0 #000000;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
     color: #000000 !important;
     display: none;
     font-size: 15px;
@@ -68,9 +67,9 @@ section, footer, header {
     background: none repeat scroll 0 0 #FF3948;
     color: #FFFFFF;
     display: inline-block;
-    font-family: 'helvetica',arial,sans-serif;
+    font-family: 'anton','helvetica',arial,sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 10px;
     padding: 2px;
     text-align: center;
@@ -142,13 +141,13 @@ h3 {
     border-radius: 5px 5px 5px 5px;
     color: #FF3948;
     font-family: helvetica,arial;
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 13px;
+    font-weight: bold;
     height: 35px;
     margin-left: 10px;
     overflow: auto;
     position: relative;
-    width: 50px;
+    width: 40px;
 }
 #write {
     background: none repeat scroll 0 0 #F2F3F3;
@@ -160,27 +159,30 @@ h3 {
     font-weight: normal;
     height: 24px;
     overflow: auto;
+    padding-left: 5px;
     position: relative;
-    width: 100px;
+    width: 125px;
 }
 #textarea {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
 }
 .file_button_container, .file_button_container input {
     background: url("/assets/img/upload.png") no-repeat scroll left top transparent;
     cursor: pointer;
+    float: left;
     height: 32px;
-    margin-right: 10px;
+    margin-left: 10px;
     width: 32px;
 }
 .file_button_container {
     background: url("/assets/img/upload.png") no-repeat scroll left top transparent;
-    float: left;
+    text-align: center;
 }
 .file_button_container input {
     opacity: 0;
+    width: 20px;
+    z-index: -1;
 }
 #catturacam {
     background: url("/assets/img/webcam.png") no-repeat scroll left top transparent;
@@ -210,12 +212,10 @@ h3 {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 20px;
-    overflow: auto;
-    padding-left: 10px;
+    overflow: hidden;
     position: relative;
 }
 #items {
-    margin-bottom: 20px;
     padding-top: 20px;
 }
 .testochat {
@@ -227,7 +227,7 @@ h3 {
 .memsg {
     color: #FF3948;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: bold;
     margin-top: 10px;
 }
 #frecce {
@@ -253,6 +253,7 @@ h3 {
 #uploads {
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
 }
 #footer-copyright {
     bottom: 0;
@@ -279,13 +280,13 @@ h3 {
 #width {
     background: none repeat scroll 0 0 #DDDDDD;
     border: medium none;
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 2px 2px 2px 2px;
     cursor: pointer;
     font-family: 'helvetica neue',helvetica,arial,sans-serif;
     font-size: 13px;
     margin-left: 10px;
     padding: 5px 10px;
-    width: 210px;
+    width: 80px;
 }
 #clearsave {
     font-weight: bold;
@@ -365,7 +366,7 @@ footer p.tzine {
     top: 0;
 }
 body {
-    background-color: #000000;
+    background-color: #ffffff;
     color: #444444;
     font: 14px/1.3 'Helvetica',Arial,sans-serif;
 }
@@ -384,3 +385,5 @@ body {
 #content, #masthead ul, footer {
     display: none;
 }
+
+

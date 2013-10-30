@@ -51,7 +51,7 @@ section, footer, header {
     color: #FFFFFF;
 }
 .sidr {
-    background: none repeat scroll 0 0 #000000;
+    background: none repeat scroll 0 0 #290021;
     color: #000000 !important;
     display: none;
     font-size: 15px;
@@ -63,18 +63,30 @@ section, footer, header {
     width: 200px;
     z-index: 999997;
 }
-#logo {
-    background: none repeat scroll 0 0 #FF3948;
+#wrapper {
+    bottom: 0;
+    position: absolute;
+}
+#icon {
+    /*background: url(/assets/img/homer.png) no-repeat; */
+    color: #FFFFFF;
+    text-align: center;
+    width: 77px;
+    height:40px;
+    margin-left: 61px;
+}
+ls#logo {
+    background-color: #FF3948;
     color: #FFFFFF;
     display: inline-block;
-    font-family: 'anton','helvetica',arial,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    padding: 2px;
+    font-family: 'helvetica',arial,sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: center;
     top: 0;
-    width: 100%;
 }
 #logo:hover {
 }
@@ -85,33 +97,31 @@ section, footer, header {
     text-align: center;
 }
 hgroup {
-    background-color: #FFFFA8;
+    background-color: #000000;
     color: #FFFFFF;
-    left: 50%;
+    left: 450px;
     margin: -110px 0 0 -240px;
     padding: 20px;
     position: fixed;
-    text-align: center;
-    top: 40%;
-    width: 400px;
+    top: 120px;
+    width: 180px;
     z-index: 999999;
 }
 instructions {
 }
 h1 {
-    color: #666666;
-    font-family: 'Raleway',helvetica,arial,sans-serif;
+    color: #FFF;
     font-size: 30px;
     font-weight: bold;
 }
 h2 {
-    color: #666666;
+    color: #fff;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: bold;
     padding-bottom: 8px;
 }
 h3 {
-    color: #999999;
+    color: #fff;
     font-size: 14px;
     font-weight: bold;
 }
@@ -137,15 +147,17 @@ h3 {
 }
 #username {
     background: none repeat scroll 0 0 transparent;
-    border: medium none;
-    border-radius: 5px 5px 5px 5px;
+    border: 2px solid #333333;
+    border-radius: 2px 2px 2px 2px;
     color: #FF3948;
     font-family: helvetica,arial;
     font-size: 13px;
     font-weight: bold;
-    height: 35px;
+    height: 21px;
     margin-left: 10px;
     overflow: auto;
+    padding-left: 2px;
+    padding-right: 5px;
     position: relative;
     width: 40px;
 }
@@ -165,19 +177,19 @@ h3 {
 }
 #textarea {
     margin-bottom: 10px;
-    padding-top: 10px;
 }
 .file_button_container, .file_button_container input {
     background: url("/assets/img/upload.png") no-repeat scroll left top transparent;
     cursor: pointer;
-    float: left;
     height: 32px;
-    margin-left: 10px;
+    margin: 0 auto;
+    text-align: center;
     width: 32px;
 }
 .file_button_container {
     background: url("/assets/img/upload.png") no-repeat scroll left top transparent;
     text-align: center;
+    overflow:hidden;
 }
 .file_button_container input {
     opacity: 0;
@@ -201,22 +213,22 @@ h3 {
     right: 0;
     width: 20px;
     z-index: 999999;
+    display:none;
 }
 #testichat {
-    background-color: #000000;
+    background-color: #290021;
     border-bottom: 1px dotted #FFFFFF;
-    border-top: 1px dotted #FFFFFF;
+    bottom: 7em;
     color: #FFFFFF;
     font-size: 13px;
-    height: 70%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 20px;
-    overflow: hidden;
-    position: relative;
+    overflow: auto;
+    padding: 5px;
+    position: absolute;
+    top: 8em;
 }
 #items {
-    padding-top: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 .testochat {
     color: #00AFED;
@@ -236,7 +248,7 @@ h3 {
     height: 445px;
 }
 #paper {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 #controls {
     background-color: #2C2C2C;
@@ -287,6 +299,7 @@ h3 {
     margin-left: 10px;
     padding: 5px 10px;
     width: 80px;
+  display:none;
 }
 #clearsave {
     font-weight: bold;
